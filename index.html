@@ -509,6 +509,7 @@
                 class="footer-email-input"
                 id="subscribe_email"
                 placeholder="E-mail"
+                name="email_subscribe"
                 required
               />
             </label>
@@ -523,11 +524,11 @@
       </div>
     </footer>
     <!-- backdrop+modal -->
-    <div class="modal-backdrop">
+    <div class="modal-backdrop is-open">
       <div class="modal">
         <!-- Кнопка закрытия -->
         <button class="modal-close-button" type="button">
-          <svg class="modal-close-icon" width="24" height="24">
+          <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -539,13 +540,13 @@
         <form class="modal-form">
           <!-- Поле имени -->
           <div class="modal-form-group">
-            <label class="modal-form-label" for="user_name">Name</label>
+            <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-input-wrapper">
               <input
                 class="modal-input"
                 type="text"
-                id="user_name"
-                name="user_name"
+                id="user-name"
+                name="user-name"
                 required
               />
               <svg class="modal-input-icon" width="18" height="24">
@@ -556,13 +557,13 @@
 
           <!-- Поле email -->
           <div class="modal-form-group">
-            <label class="modal-form-label" for="user_email">Email</label>
+            <label class="modal-form-label" for="user-email">Email</label>
             <div class="modal-input-wrapper">
               <input
                 class="modal-input"
                 type="email"
-                id="user_email"
-                name="user_email"
+                id="user-email"
+                name="user-email"
                 required
               />
               <svg class="modal-input-icon" width="18" height="24">
@@ -573,13 +574,13 @@
 
           <!-- Поле телефона -->
           <div class="modal-form-group">
-            <label class="modal-form-label" for="user_tel">Phone</label>
+            <label class="modal-form-label" for="user-tel">Phone</label>
             <div class="modal-input-wrapper">
               <input
                 class="modal-input"
                 type="tel"
-                id="user_tel"
-                name="user_tel"
+                id="user-tel"
+                name="user-tel"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
                 required
@@ -591,12 +592,12 @@
           </div>
 
           <!-- Поле комментария -->
-          <div class="modal-form-group">
-            <label class="modal-form-label" for="user-message">Comment</label>
+          <div class="modal-form-group-textarea">
+            <label class="modal-form-label" for=" user-comment">Comment</label>
             <textarea
               class="modal-textarea"
-              name="user_comment"
-              id="user-message"
+              name=" user-comment"
+              id=" user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -606,10 +607,11 @@
             <input
               class="modal-checkbox visually-hidden"
               type="checkbox"
-              id="checkbox"
-              name="policy"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
             />
-            <label class="modal-checkbox-label" for="checkbox">
+            <label class="modal-checkbox-label" for="user-privacy">
               <span class="modal-checkbox-icon-wrapper">
                 <svg class="modal-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
