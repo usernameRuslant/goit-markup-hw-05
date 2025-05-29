@@ -706,6 +706,7 @@ body {
 }
 .modal-close-button:focus {
   border: none;
+  background-color: #404bbf;
 }
 
 .modal-title {
@@ -726,11 +727,6 @@ body {
 }
 .modal-form-group-textarea {
   margin-bottom: 16px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
-  background-color: transparent;
 }
 .modal-form-group-textarea::placeholder {
   line-height: 1.17;
@@ -788,6 +784,10 @@ body {
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
   padding: 8px 16px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   /* opacity: 0.5; */
   resize: none;
   margin-bottom: 16px;
