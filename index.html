@@ -483,7 +483,7 @@
           </ul>
         </div>
         <!-- form side -->
-        <form class="footer-email-form">
+        <!-- <form class="footer-email-form">
           <label class="footer-email-label" for="email">Subscribe</label>
           <input
             class="footer-email-input"
@@ -499,11 +499,31 @@
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
-        </form>
+        </form> -->
+        <div class="footer-email-form-wrapper">
+          <p class="footer-email-label">Subscribe</p>
+          <form class="footer-email-form">
+            <label class="footer-email-label" for="subscribe_email">
+              <input
+                type="email"
+                class="footer-email-input"
+                id="subscribe_email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="footer-email-button" type="submit">
+              Subscribe
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- backdrop+modal -->
-    <div class="modal-backdrop is-open">
+    <div class="modal-backdrop">
       <div class="modal">
         <!-- Кнопка закрытия -->
         <button class="modal-close-button" type="button">
